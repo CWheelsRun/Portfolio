@@ -161,6 +161,7 @@ nav li a:visited {
     #about figure img {
         width: 80%;
         border-radius: 10px;
+        max-width: 500px;
     }
 
     #about {
