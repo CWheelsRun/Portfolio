@@ -120,6 +120,80 @@ nav li a:visited {
 
 /* About section end */
 
+/* Projects section start */
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 20px;
+}
+
+#projects h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#projects.links {
+    display: flex;
+    flex-direction: row;
+}
+
+#projects article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects h3 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+#projects img {
+    max-width: 500px;
+}
+
+
+
+
+
+/* Projects section end */
+
+/* Contact section start */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h2 {
+    font-size: 2em;
+}
+
+.contacts a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.contacts a:hover {
+    background-color: var(--button-color);
+    color: var(--base-color);
+    border: none;
+}
+
+
+/* Contact section end */
+
 @media screen and (min-width: 1450px) {
 
     header {
@@ -172,4 +246,19 @@ nav li a:visited {
         text-align: center;
         padding-left: 20px;
     }
+
+    #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
 }
