@@ -1,0 +1,119 @@
+:root {
+    --base-color: aliceblue;
+    --accent-color: steelblue;
+    --font-color: darkslategray;
+    --button-color: rebeccapurple;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--font-color);
+    background-color: var(--base-color);
+}
+
+/* Header section start */
+
+header {
+    padding: 20px;
+    color: var(--base-color);
+    background-color: var(--font-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+
+header ul#nutshell {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    color: var(--font-color);
+    text-shadow: -2px 0 var(--base-color), 0 1px var(--base-color), 1px 0 var(--base-color), 0 -1px var(--base-color);
+}
+
+nav {
+    margin: 5px auto;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: none;
+    gap: 1.2rem;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav li a:hover {
+    background-color: var(--button-color);
+    color: var(--base-color);
+}
+
+nav li a:visited {
+    color:var(--base-color);
+}
+
+/* Header section end */
+
+
+
+
+@media screen and (min-width: 1450px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 621px) {
+
+    header ul#nutshell{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+}
