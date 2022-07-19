@@ -138,7 +138,7 @@ nav li a:visited {
 
 #projects.links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #projects article {
@@ -155,7 +155,7 @@ nav li a:visited {
 }
 
 #projects img {
-    max-width: 500px;
+    max-width: 300px;
 }
 
 
@@ -169,9 +169,13 @@ nav li a:visited {
 #contact {
     display: flex;
     flex-direction: column;
+    background-color: var(--font-color);
+    color: var(--base-color);
 }
 
 #contact h2 {
+    text-align: center;
+    margin-right: 5px;
     font-size: 2em;
 }
 
@@ -179,10 +183,9 @@ nav li a:visited {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    color: var(--font-color);
-    padding: 10px;
     margin: 5px;
     border-radius: 10px;
+    color: var(--base-color);
 }
 
 .contacts a:hover {
@@ -191,8 +194,20 @@ nav li a:visited {
     border: none;
 }
 
+.contacts a:visited {
+    color:var(--base-color);
+}
+
 
 /* Contact section end */
+
+footer {
+    background-color: var(--font-color);
+    color: var(--base-color);
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (min-width: 1450px) {
 
@@ -245,6 +260,11 @@ nav li a:visited {
         justify-content: space-between;
         text-align: center;
         padding-left: 20px;
+    }
+
+    #projects.links {
+        display: flex;
+        flex-direction: row;
     }
 
     #contact {
