@@ -70,6 +70,7 @@ nav ul a {
     border-radius: 10px;
     justify-content: space-around;
     padding: 10px;
+    color: var(--base-color);
 }
 
 nav li a:hover {
