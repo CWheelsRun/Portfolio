@@ -83,8 +83,42 @@ nav li a:visited {
 
 /* Header section end */
 
+.banner img {
+    width: 100%;
+}
 
+/* About section start */
 
+#about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+#about p {
+    line-height: 1.5em;
+}
+
+#about figure {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#about figure img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+/* About section end */
 
 @media screen and (min-width: 1450px) {
 
@@ -109,11 +143,32 @@ nav li a:visited {
         display: flex;
         flex-direction: row;
         padding: 10px;
+        margin: 0 auto;
     }
 
     header nav ul{
         display: flex;
         flex-direction: row;
         padding: 10px;
+    }
+
+    #about figure {
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #about figure img {
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding-left: 20px;
     }
 }
